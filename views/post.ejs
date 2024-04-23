@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/post.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <%- include('partials/header.ejs') -%>
+        <form action="/blogs" class="form" method="post">
+            <div class="formContainer">
+                <h2>POST BLOG</h2>
+                <div class="flexInput">
+                    <input class="inpu" type="text" placeholder="Name" name="name" /><br/>
+                    <input class="inpu" type="email" placeholder="Email" name="email" /><br/>
+                </div>
+                <input type="text" placeholder="Subject" name="subject" /><br/>
+                <textarea type="text" placeholder="Message..." name="message"></textarea><br/>
+                <button type="submit">SEND</button>
+            </div>
+            <%- include('partials/footer.ejs') -%>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/blog.css" />
+    <title><%= title %></title>
+</head>
+<body>
+    <div>
+        <%- include('partials/header.ejs') -%>
+        <div class="blog-container">
+            <% blogs.forEach(blog => { %>
+            <div class="box">
+                <h2><%= blog.name%></h2>
+                <h3 style="font-style: italic;"><%= blog.email%></h3>
+                <h4><%= blog.subject%></h4>
+                <p><%= blog.message%></p>
+                <a href="/single-view/<%= blog.id %>">
+                    <button class="btn">View</button>
+                </a>
+                <a href="/update-view/<%= blog.id %>">
+                    <button class="btn">Update</button>
+                </a>
+            </div>
+            <%})%>
+        </div>
+        <p style="text-align: center;">copyright &copy; 2024</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(226, 223, 223);
+}
+.btn {
+    text-decoration: none; 
+    background-color: black; 
+    color: white;
+     border: none; 
+     padding: 15px 35px; 
+     border-radius: 35px;
+}
+.btn:hover {
+    border: 1px solid black;
+    color: black;
+    background-color: transparent;
+    font-weight: 600;
+}
+.home {
+    margin: 0px 35px;
+    display: flex;
+    justify-content: space-between;
+}
+.home h2 {
+    font-size: 2.8rem;
+    font-family: cursive;
+}
+.home-img img {
+    margin: 20px 0px;
+    width: 400px;
+    height: 400px;
+}
+.home-content {
+    margin: 20px 0px;
+}
+.home-content P {
+    padding-bottom: 10px;
+    line-height: 1.5rem;
+    font-style: italic;
+}

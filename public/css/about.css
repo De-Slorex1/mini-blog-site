@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(226, 223, 223);
+}
+.btn {
+    text-decoration: none; 
+    background-color: black; 
+    color: white; border: none; 
+    padding: 10px 15px; 
+    border-radius: 5px;
+}
+.about {
+    margin: 0px 35px;
+}
+.about p {
+    line-height: 1.5rem;
+}
